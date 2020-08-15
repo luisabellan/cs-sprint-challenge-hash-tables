@@ -23,20 +23,21 @@ def reconstruct_trip(tickets, length):
     for ticket in tickets:
         tickets_dict[ticket.source] = ticket.destination
    
+    # create route array
     route = []
+
+    # search first trip and append it to route array
     start = tickets_dict['NONE']
     route.append(start)
-
-    next = None
-
+    
+    # loop the tickets array
     for _ in range(1,length):
         
+        # search next trip and add it to route array 
         next = tickets_dict[route[-1]]
         route.append(next)
 
-    
-        
-    #print(f'route = {route}')
+    # print(f"route = {route}")
     return route
 
 
