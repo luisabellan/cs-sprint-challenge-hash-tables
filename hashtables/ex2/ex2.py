@@ -13,8 +13,7 @@ def reconstruct_trip(tickets, length):
     """
     Reconstructs the trip
     """
-    # Your code here
-
+    
     # populate dictionary of tickets
     for ticket in tickets:
         tickets_dict[ticket.source] = ticket.destination
