@@ -22,13 +22,14 @@ def get_indices_of_item_weights(weights, length, limit):
         weights_dict[weights[i]] = i
 
         value = limit - weights[i]
+        # if value is found in dict
         if value in weights_dict.keys():
 
             # add indices to result
             result.append(weights_dict[weights[i]])
             result.append(weights_dict[value])
 
-            # if there are only 2 items in the array
+            # if there are only 2 items in the array ad they are the same value
             if result == [0,0]:
                 result[0] += 1 
 
