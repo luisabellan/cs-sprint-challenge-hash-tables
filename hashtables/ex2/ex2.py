@@ -1,13 +1,9 @@
 #  Hint:  You may not need all of these.  Remove the unused functions.
 
-
-
-
 class Ticket:
     def __init__(self, source, destination):
         self.source = source
         self.destination = destination
-
 
 
 # create dictionary of tickets
@@ -36,6 +32,7 @@ def reconstruct_trip(tickets, length):
         # search next trip and add it to route array 
         next = tickets_dict[route[-1]]
         route.append(next)
+
 
     # print(f"route = {route}")
     return route
