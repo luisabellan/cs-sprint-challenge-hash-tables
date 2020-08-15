@@ -49,7 +49,7 @@ def reconstruct_trip(tickets, length):
 
     next = None
 
-    for _ in range(1,9):
+    for _ in range(1,length-1):
         
         next = tickets_dict[route[-1]]
         route.append(next)
