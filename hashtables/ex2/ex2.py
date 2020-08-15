@@ -34,11 +34,9 @@ create_table()
 print(tickets_dict)
 
 route = []
-start = tickets_dict['NONE']
-prev = start
-route.append(start)
+
 # print(route)
-first = None
+
 
 def reconstruct_trip(tickets, length):
     """
@@ -46,24 +44,21 @@ def reconstruct_trip(tickets, length):
     """
     # Your code here
    
-    
-    
-  
-    def add_to_route():
+    start = tickets_dict['NONE']
+    route.append(start)
 
-        for i in range(1,len(tickets)):
-            
-            if tickets[i].source == prev:
-                route.append(tickets[i].destination)
-                prev = tickets_dict[ticket.source]
-            else:
-                add_to_route()
-           
+    next = None
 
-         
+    for _ in range(1,9):
+        
+        next = tickets_dict[route[-1]]
+        route.append(next)
 
-    
-           
+   
+
+                    
+
+
         
     print(f'route = {route}')
   
