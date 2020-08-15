@@ -1,7 +1,31 @@
-def get_indices_of_item_weights(weights, length, limit):
+index = {}
+
+
+def calculate(x, y, z):
+    return 
+
+
+def get_indices_of_item_weights(weights, limit):
     """
     YOUR CODE HERE
     """
     # Your code here
+    
+    table = {}
+    input = (weights, limit)
 
-    return None
+    for i in range(len(weights)):
+        if weights[]
+
+                 
+
+    return table
+
+
+    
+
+
+    return ()
+
+
+
