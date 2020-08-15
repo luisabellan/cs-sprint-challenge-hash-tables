@@ -10,7 +10,7 @@ class Ticket:
 
 
 
-
+# create dictionary of tickets
 tickets_dict = {}
 
 def reconstruct_trip(tickets, length):
@@ -18,10 +18,12 @@ def reconstruct_trip(tickets, length):
     YOUR CODE HERE
     """
     # Your code here
-    route = []
+
+    # populate dictionary of tickets
     for ticket in tickets:
         tickets_dict[ticket.source] = ticket.destination
    
+    route = []
     start = tickets_dict['NONE']
     route.append(start)
 
@@ -37,7 +39,7 @@ def reconstruct_trip(tickets, length):
     #print(f'route = {route}')
     return route
 
-    
+
 """ 
 
 # test short case
