@@ -2,13 +2,22 @@
 
 
 
+
+queries_dict = {}
+
 def finder(files, queries):
     """
     YOUR CODE HERE
     """
     # Your code here
+    for file in files:
+        queries_dict[]
+        
+        
+        
 
-    return result
+
+    # return result
 
 
 if __name__ == "__main__":
