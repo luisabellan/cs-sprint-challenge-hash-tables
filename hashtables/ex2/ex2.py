@@ -15,7 +15,7 @@ tickets_dict = {}
 
 def reconstruct_trip(tickets, length):
     """
-    YOUR CODE HERE
+    Reconstructs the trip
     """
     # Your code here
 
