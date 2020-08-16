@@ -1,23 +1,55 @@
 # Your code here
 
 
-
-
-queries_dict = {}
+finder_cache = {}
 
 def finder(files, queries):
     """
     YOUR CODE HERE
     """
     # Your code here
+
+
     for file in files:
-        queries_dict[]
-        
-        
-        
+        my_file = file
+        ending = my_file.split('/')[-1]
+        query = ending
+        finder_cache[query] = []
+       
+    
+    for file in files:
+        my_file = file
+        ending = my_file.split('/')[-1]
+        query = ending
+        finder_cache[query].append(my_file)
+    
+    # print(finder_cache)
+    
 
 
-    # return result
+    a = {}
+
+    for i in range(len(queries)):
+        
+      
+        # populate dictionary a
+        if queries[i] in finder_cache:
+            a[queries[i]] = finder_cache[queries[i]]
+    
+    # print(a)
+    b = []
+    for i in a.values():
+        b.append(i)
+    result = []
+    for array in b:
+        for i in array:
+            result.append(i)
+
+    return result 
+    
+
+
+
 
 
 if __name__ == "__main__":
@@ -29,6 +61,9 @@ if __name__ == "__main__":
     queries = [
         "foo",
         "qux",
-        "baz"
+        "bar"
     ]
     print(finder(files, queries))
+
+
+
