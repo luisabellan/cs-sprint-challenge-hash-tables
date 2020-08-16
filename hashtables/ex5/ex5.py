@@ -1,6 +1,6 @@
 # Your code here
 
-
+# create dictionary which will hold all the files paths from input
 finder_cache = {}
 
 def finder(files, queries):
@@ -25,8 +25,7 @@ def finder(files, queries):
     
     # print(finder_cache)
     
-
-
+    # create curated dictionary which will hold only the files paths that match the queries from input
     a = {}
 
     for i in range(len(queries)):
@@ -37,9 +36,15 @@ def finder(files, queries):
             a[queries[i]] = finder_cache[queries[i]]
     
     # print(a)
+    
+    # create array which will hold and array of arrays of files paths, I'll have to turn this into an array 
     b = []
     for i in a.values():
         b.append(i)
+    
+    # print(b)
+
+    # create and array, append the paths to it and return it as the result
     result = []
     for array in b:
         for i in array:
@@ -56,6 +61,7 @@ if __name__ == "__main__":
     files = [
         '/bin/foo',
         '/bin/bar',
+        '/bin/waka/bar',
         '/usr/bin/baz'
     ]
     queries = [
