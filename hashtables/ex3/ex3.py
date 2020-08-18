@@ -34,6 +34,7 @@ def intersection(arrays):
     # loop array of arrays
     # find smaller array
     
+    # TODO finish this
 
     dictionaries = {}
     # for each array
